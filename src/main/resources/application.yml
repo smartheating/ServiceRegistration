@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: serviceregistration
+
+server:
+  port: ${PORT:9000}
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
