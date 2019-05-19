@@ -1,0 +1,14 @@
+version: '3.7'
+
+services: 
+  serviceregistration:
+    image: serviceregistration
+    ports:
+      - 9000:9000
+    container_name: serviceregistration
+    hostname: serviceregistration
+
+networks:
+  default:
+    external:
+      name: smartheating
