@@ -2,6 +2,9 @@ version: '3.7'
 
 services: 
   serviceregistration:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: serviceregistration
     ports:
       - 9000:9000
