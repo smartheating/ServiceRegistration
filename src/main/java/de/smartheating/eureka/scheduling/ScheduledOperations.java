@@ -25,7 +25,7 @@ public class ScheduledOperations {
 		for (Application application: applications) {
 			List<InstanceInfo> infos = application.getInstances();
 			for (InstanceInfo info: infos) {
-				logger.info("AppName: " + info.getAppName() + "; InstanceID: " + info.getInstanceId() + "; URL:" + info.getHomePageUrl());
+				logger.info("AppName: " + info.getAppName() + "; InstanceID: " + info.getInstanceId() + "; IP:" + info.getIPAddr() + "; Port: " + info.getPort());
 			}
 		}
 		
